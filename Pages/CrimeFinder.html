@@ -48,14 +48,22 @@ The actual code The actual code The actual code The actual code The actual code 
 <div id="SearchDiv">
 
 
-
-<form action="CrimeFinder.html" method="get">
+<!--HTML -->
+<form action="CrimeFinder.html" >
 	<label for="search">City, State</label>
 	<input type="text" name="search" placeholder="City, State" id="search"><br>
-	<input type="submit" name="submit" value="Search">
+	<input type="submit" name="submit" onclick="getSearch()" value="Search">
 </form>
 
+<!--Java Script!!-->
 <script type="text/javascript">
+function getSearch(){
+
+	var query = document.getElementById("search").value;
+    alert(query);
+    
+}
+
 	
 </script>
 
