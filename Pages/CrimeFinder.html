@@ -24,9 +24,8 @@
 <nav id = "ht">
 
 <ul>
-  <li><a href="../../index.php">HOME</a></li>
-  <li><a href="myWork.php">WORK</a></li>
-  <li><a href="about.php">ABOUT</a></li>
+  <li><a href="CrimeFinder.html">HOME</a></li>
+ 
   
   
   <li style="float:right"><a href="contact.php">CONTACT</a>
@@ -54,10 +53,10 @@ The actual code The actual code The actual code The actual code The actual code 
 	<button name="submit" onclick="getSearch()">Search</button> 
 <br><br>
 
-<p id="results"></p>
+<div id="results">
 
 
-<table>
+
 
 
 
@@ -65,18 +64,35 @@ The actual code The actual code The actual code The actual code The actual code 
 <script type="text/javascript">
 
 //stores begining of table
-var th = `<tr>
-	<th>State</th> <th>City</th><th>Crime</th><th>Year</th>
+var th = `<table><tr>
+	<th>State</th> <th>City</th> <th>Crime</th> <th>Year</th>
 </tr>`;
 
 //logic for button click
 function getSearch(){
 
 	var query = document.getElementById("search").value;
-    var result ="Showing results for " + query + ".<br><br>" + th + "</table>";
+    var result ="Showing results for " + query + ".<br><br>" + th;
 
+for (var i = 0; i < 20; i++){
+var myRows = `<tr>
+<td>` +"stateARRAYINDEX"+`
+</td> 
 
-    document.getElementById("results").innerHTML = result;
+<td>` +"CItyARRAYINDEX"+`
+</td> 
+
+<td>` +"stateARRAYINDEX"+`
+</td> 
+
+<td>` +"stateARRAYINDEX"+`
+</td> 
+
+</tr>`;
+}
+
+    
+    document.getElementById("results").innerHTML = result + th+ myRows + "</table>";
 
 
 }
@@ -84,8 +100,9 @@ function getSearch(){
 	
 </script>
 
-
 </div>
+</div>
+
 
 
 <!--
@@ -124,7 +141,7 @@ The actual code The actual code The actual code The actual code The actual code 
 			<div class="footer-right">
 
 
-				<a href="mailto:Max@devmw.com">Email Max</a>
+				<a href="mailto:Max@devmw.com">Email US</a>
 
 
 	

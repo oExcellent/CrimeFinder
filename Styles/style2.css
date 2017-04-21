@@ -361,7 +361,7 @@ color: yellow;
 color: green;
 }
 
-.Success, Warning{
+.Success, .Warning{
 text-align: center;
 padding-left:30%;
 }
@@ -430,8 +430,8 @@ footer, .push {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-footer{
-
+#myFooter{
+width: 100%;
 text-align: center;
 padding-top: 100%;
 }
@@ -450,10 +450,6 @@ color:white;
 
 }
 
-.demo{
-length:150px; 
-width:250px;
-}
 
 #SearchDiv{
 padding-left: 41%;
