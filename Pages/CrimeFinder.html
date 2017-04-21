@@ -56,18 +56,34 @@ The actual code The actual code The actual code The actual code The actual code 
 
 <p id="results"></p>
 
+
+<table>
+
+
+
 <!--Java Script!!-->
 <script type="text/javascript">
+
+//stores begining of table
+var th = `<tr>
+	<th>State</th> <th>City</th><th>Crime</th><th>Year</th>
+</tr>`;
+
 //logic for button click
 function getSearch(){
 
 	var query = document.getElementById("search").value;
-    var result ="Showing results for " + query + ".";
+    var result ="Showing results for " + query + ".<br><br>" + th + "</table>";
+
+
     document.getElementById("results").innerHTML = result;
+
+
 }
 
 	
 </script>
+
 
 </div>
 
