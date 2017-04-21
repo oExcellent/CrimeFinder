@@ -34,9 +34,7 @@
 </ul>
 
 </nav>
-<header >
-    <h1>Crime Finder</h1>
-</header>
+
 
 
 <!--
@@ -46,22 +44,26 @@ The actual code The actual code The actual code The actual code The actual code 
 -->
 
 <div id="SearchDiv">
-
+<br><br>
+<h1>Crime Finder</h1><br><br>
 
 <!--HTML -->
-<form action="CrimeFinder.html" >
+
 	<label for="search">City, State</label>
-	<input type="text" name="search" placeholder="City, State" id="search"><br>
-	<input type="submit" name="submit" onclick="getSearch()" value="Search">
-</form>
+	<input type="text" name="search" placeholder="City, State" id="search">
+	<button name="submit" onclick="getSearch()">Search</button> 
+<br><br>
+
+<p id="results"></p>
 
 <!--Java Script!!-->
 <script type="text/javascript">
+//logic for button click
 function getSearch(){
 
 	var query = document.getElementById("search").value;
-    alert(query);
-    
+    var result ="Showing results for " + query + ".";
+    document.getElementById("results").innerHTML = result;
 }
 
 	
