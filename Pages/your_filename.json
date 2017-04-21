@@ -1,0 +1,13 @@
+{
+  "data": {
+    "detections": [
+      [
+        {
+          "language": "zh-TW",
+          "isReliable": false,
+          "confidence": 0.9971236
+        }
+      ]
+    ]
+  }
+}
